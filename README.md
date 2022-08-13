@@ -1,0 +1,2 @@
+# DatabaseProject
+Me and my partner Laila have designed and programmed a program called together we can that allows the user to donate either money or items, and the user can see all that he donated, and the user can learn about the most important achievements that have been achieved in using this application. This program allows the user to donate without the need to go to places for donation or charitable societies and thus help the poor and needy and spread goodness, peace, love, and brotherhood among people.
