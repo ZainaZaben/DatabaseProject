@@ -1,0 +1,62 @@
+#lbl{
+-fx-background-color:  transparent;
+-fx-text-inner-color: red;
+-fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+}
+#btn{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #28a3f4;
+}
+  #btn3 {
+                  -fx-background-image: url('face.jpg');
+                  -fx-background-size: 30px;
+                  -fx-background-repeat: no-repeat;
+                  -fx-background-position: 100%;
+              }
+                #btn4{
+                                -fx-background-image: url('googl.jpg');
+                                -fx-background-size: 30px;
+                                -fx-background-repeat: no-repeat;
+                                -fx-background-position: 100%;
+                            }
+     #btn5{
+                                              -fx-background-image: url('twiter.jpg');
+                                              -fx-background-size: 30px;
+                                              -fx-background-repeat: no-repeat;
+                                              -fx-background-position: 100%;
+                                          }

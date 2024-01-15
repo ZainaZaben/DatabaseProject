@@ -1,0 +1,126 @@
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+#text{
+-fx-background-color:  transparent;
+-fx-text-inner-color: red;
+-fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+}
+#text:focused{
+text.setStyle("-fx-background-color:  transparent;");
+text.setStyle("-fx-text-inner-color: red;");
+}
+#btn{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+
+.combo-box{
+    -fx-border-color:#E6E6E6;
+    -fx-border-style:solid;
+    -fx-border-width:1;
+}
+.combo-box .arrow{
+    -fx-background-color:#008B8B;
+}
+.combo-box .arrow-button{
+    -fx-background-color:white;
+    -fx-border-style:none;
+}
+.combo-box .arrow-button{
+    -fx-background-color:white;
+}
+.combo-box .list-cell{
+    -fx-background-color:white;
+}
+#fname{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+#lname{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+#pass{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+#reppass{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+#phonenum{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+#sex{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}
+.text{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:18;
+}
+#lbl9{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:22;
+}
+#Email{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:22;
+}
+#lbl8{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:22;
+}
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+.radio-button:selected .radio{
+    -fx-border-color: white;
+        -fx-background-color: DeepSkyBlue;
+    -fx-border-radius: 130px;
+}
+#Adminuser{
+ -fx-font-family: "Comic Sans MS";
+-fx-font-size:20;
+}

@@ -1,0 +1,27 @@
+#btn1{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn1:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+
+
+#btn2{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn2:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+

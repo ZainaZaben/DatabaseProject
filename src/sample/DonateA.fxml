@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerdonateA">
+    <children>
+        <ImageView fitHeight="305.0" fitWidth="427.0" layoutX="367.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@b313da50-39ca-4ba2-a552-e2b0f8354478.jpg" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="desc" layoutX="389.0" layoutY="144.0" prefHeight="90.0" prefWidth="277.0" />
+        <ComboBox fx:id="type" layoutX="389.0" layoutY="93.0" onAction="#initialize" prefHeight="28.0" prefWidth="277.0" visibleRowCount="3" />
+        <Text fx:id="lbl1" layoutX="282.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+        <Text fx:id="lbl2" layoutX="281.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discribtion" />
+        <Text fx:id="lbl3" layoutX="275.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+        <Button fx:id="btn1" layoutX="574.0" layoutY="411.0" mnemonicParsing="false" onAction="#Set_donation" prefHeight="71.0" prefWidth="149.0" text="Submit" />
+        <AnchorPane layoutY="-6.0" prefHeight="796.0" prefWidth="213.0" style="-fx-background-color: #6495ED;">
+            <children>
+                <Button fx:id="home" mnemonicParsing="false" onAction="#Gohome" prefHeight="71.0" prefWidth="213.0" text="Home" />
+                <Button fx:id="donate" layoutY="71.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="213.0" text="Donate" />
+                <Button fx:id="donatemoney" layoutY="142.0" mnemonicParsing="false" onAction="#GoMoney" prefHeight="71.0" prefWidth="213.0" text="Donate money" />
+                <Button fx:id="Donlist" layoutY="213.0" mnemonicParsing="false" onAction="#Golist" prefHeight="71.0" prefWidth="213.0" text="My donations" />
+                <Button fx:id="Achivments" layoutY="356.0" mnemonicParsing="false" onAction="#GoAchivments" prefHeight="71.0" prefWidth="213.0" text="Achivments" />
+                <Button fx:id="logout" layoutY="711.0" mnemonicParsing="false" onAction="#Log_Out" prefHeight="84.0" prefWidth="213.0" text="Logout" />
+                <Button fx:id="about" layoutY="428.0" mnemonicParsing="false" onAction="#Goabout" prefHeight="71.0" prefWidth="213.0" text="About us" />
+            <Button fx:id="AddAchiv" layoutY="284.0" mnemonicParsing="false" onAction="#goAddAchiv" prefHeight="71.0" prefWidth="213.0" text="Add Achivments" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="add" layoutX="385.0" layoutY="361.0" mnemonicParsing="false" onAction="#Choos_Image" prefHeight="38.0" prefWidth="123.0" text="Add" />
+        <Text fx:id="lbl4" layoutX="275.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add photo" />
+        <TextField fx:id="quantity" layoutX="389.0" layoutY="254.0" prefHeight="31.0" prefWidth="277.0" />
+        <Text fx:id="lbl5" layoutX="275.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charity" />
+        <ComboBox fx:id="Charity" layoutX="385.0" layoutY="305.0" onAction="#initialize" prefHeight="28.0" prefWidth="277.0" visibleRowCount="3" />
+        <ImageView fx:id="img" fitHeight="201.0" fitWidth="215.0" layoutX="237.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true" />
+        <Text fx:id="txt" fill="RED" layoutX="366.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="192.6708984375">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Text>
+        <Text fill="CORNFLOWERBLUE" layoutX="404.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donate Now!" wrappingWidth="230.72900390625">
+            <font>
+                <Font name="Bauhaus 93" size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
