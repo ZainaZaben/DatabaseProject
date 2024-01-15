@@ -1,0 +1,76 @@
+.text-field {
+    -fx-background-color: #008B8B, white ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+.button{
+-fx-background-color:
+    #6495ED;
+-fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+ .button:hover{
+              -fx-background-color:#483D8B;
+              }
+              .combo-box .cell{
+                  -fx-text-fill: black;
+                  -fx-font: 16px "Arial Narrow";
+              }
+              #lbl{
+              -fx-background-color:  transparent;
+              -fx-text-inner-color: red;
+              -fx-font-family: "Comic Sans MS";
+                  -fx-font-weight: bold;
+              }
+
+
+.combo-box{
+    -fx-border-color:#E6E6E6;
+    -fx-border-style:solid;
+    -fx-border-width:1;
+}
+.combo-box .arrow{
+    -fx-background-color:#008B8B;
+}
+.combo-box .arrow-button{
+    -fx-background-color:white;
+    -fx-border-style:none;
+}
+.combo-box .arrow-button{
+    -fx-background-color:white;
+}
+.combo-box .list-cell{
+    -fx-background-color:white;
+}
+#btn1{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn1:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+.text{
+               -fx-font-family: "Comic Sans MS";
+              -fx-font-size:22;
+              }
+#lbl1{
+               -fx-font-family: "Comic Sans MS";
+              -fx-font-size:22;
+              }
+              #lbl2{
+                             -fx-font-family: "Comic Sans MS";
+                            -fx-font-size:22;
+                            }
+                            #lbl3{
+                                           -fx-font-family: "Comic Sans MS";
+                                          -fx-font-size:22;
+                                          }

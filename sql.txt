@@ -1,0 +1,83 @@
+create table Doner (
+Ssn CHAR(4),
+Email VARCHAR(40) not null,
+Fname VARCHAR(20)not null,
+Lname VARCHAR(20) not null,
+Passwordd VARCHAR(18) not null,
+Phone NUMBER(12) default 0,
+ADMINUSER char(1),
+Gender char(1) not null,
+check (Gender in('M','F')),
+CONSTRAINT Donerpk PRIMARY KEY(Ssn)
+);
+create table Donation(
+DId NUMBER(4),
+DonateFor VARCHAR(50),
+Bank VARCHAR(50),
+money NUMBER(6),
+Typee CHAR(15),
+Descriptionn VARCHAR(100),
+Quantity NUMBER(3),
+PHOTO BLOB,
+forignmony NUMBER(1),
+forignitem NUMBER(1),
+DonSsn char(4),
+CONSTRAINT donation_ID PRIMARY KEY(DId),
+CONSTRAINT donationFK foreign key(DonSsn) REFERENCES Doner (Ssn) on delete CASCADE);
+CREATE SEQUENCE donateseq;
+CREATE OR REPLACE TRIGGER donate_on_insert
+  BEFORE INSERT ON DONATION
+  FOR EACH ROW
+BEGIN
+  SELECT donateseq.nextval
+  INTO :new.DId
+  FROM dual;
+END;
+create table login(
+logid NUMBER(4) PRIMARY key,
+logssn char(4),
+emaillog char(40));
+CREATE SEQUENCE logeseq;
+CREATE OR REPLACE TRIGGER log_on_insert
+  BEFORE INSERT ON login
+  FOR EACH ROW
+BEGIN
+  SELECT donateseq.nextval
+  INTO :new.logid
+  FROM dual;
+END;
+create table Donation_list(
+DSsn CHAR(4) not null,
+DonType CHAR(5),
+CONSTRAINT donListPK PRIMARY KEY (DSsn,DonType),
+CONSTRAINT donerFK foreign key(DSsn) REFERENCES Doner (Ssn)
+on DELETE CASCADE   );
+create table AppAchievements(
+AppAchid NUMBER(4) PRIMARY key,
+TEXTT char(500));
+CREATE SEQUENCE AppAchseq;
+CREATE OR REPLACE TRIGGER AppAch_on_insert
+  BEFORE INSERT ON AppAchievements
+  FOR EACH ROW
+BEGIN
+  SELECT donateseq.nextval
+  INTO :new.AppAchid
+  FROM dual;
+END;
+_____________
+insert into Doner values(?,?,?,?,?,?,?,?)
+Select Email,Passwordd,Ssn,ADMINUSER from Doner where Email='"+Emailtext.getText()+"'"
+insert into login values(?,?,?)
+select TEXTT FROM AppAchievements
+insert into APPACHIEVEMENTS values(?,?)
+insert into Donation values(?,?,?,?,?,?,?,?,?,?,?)
+"select d.Ssn,d.Fname,d.Lname,do.DonateFor,do.money,do.forignitem " +
+                            "from   Doner d " +
+                            "join   donation do " +
+                            "on     Ssn = DONSSN " +
+                            "where d.Ssn='"+rs.getString("logssn")
+"select d.Ssn,d.Fname,d.Lname,do.DonateFor,do.money,do.forignitem " +
+                            "from   Doner d " +
+                            "join   donation do " +
+                            "on     d.Ssn = do.DONSSN "
+

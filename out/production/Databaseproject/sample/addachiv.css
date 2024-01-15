@@ -1,0 +1,38 @@
+#txt{
+-fx-background-color:  transparent;
+-fx-text-inner-color: red;
+-fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+}
+#save{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#00FFFF, #1E90FF);
+     -fx-background-radius: 30;
+              -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#save:hover {
+    -fx-background-color: linear-gradient(#1E90FF, #00FFFF);
+}
+.button{
+-fx-background-color:
+    #6495ED;
+-fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+ .button:hover{
+              -fx-background-color:#483D8B;
+}
+.text{
+               -fx-font-family: "Comic Sans MS";
+              -fx-font-size:22;
+              }
+
+              #lbl1{
+              -fx-font-family: "Comic Sans MS";
+                            -fx-font-size:20;
+              }

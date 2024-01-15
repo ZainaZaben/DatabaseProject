@@ -1,0 +1,30 @@
+.button{
+-fx-background-color:
+    #6495ED;
+-fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.button:pressed{
+    -fx-background-color:
+        #6495ED;
+    -fx-font-family: "Helvetica";
+        -fx-font-size: 18px;
+        -fx-font-weight: bold;
+        -fx-text-fill: white;
+}
+.text{
+-fx-font-family: "Arial Black";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+}
+ .button:hover{
+              -fx-background-color:#483D8B;
+              }
+              .text{
+               -fx-font-family: "Comic Sans MS";
+              -fx-font-size:22;
+              }
